@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+    <!-- Static content -->
+
+
+    <link rel="stylesheet" href=" {% static 'css/style.css' %}">
+    <script type="text/javascript" src=" {% static 'js/app.js' %}"></script>
+
+    <title>Django Sample</title>
+</head>
+<body>
+<h1>PayPing Django Sample</h1>
+<hr>
+
+<div class="form">
+    <form action="createpay" method="post"   onsubmit="return validate()">
+        {% csrf_token %}
+        <table>
+            <tr>
+                <td>Name</td>
+                <td><input id="payerName" name="payerName" ></td>
+            </tr>
+            <tr>
+                <td>Amount*</td>
+                <td><input id="amount" name="amount" type="number" value="1000" ></td>
+            </tr>
+            <tr>
+                <td>PhoneOrEmail</td>
+                <td><input id="payerIdentity" name="payerIdentity" ></td>
+            </tr>
+            <tr>
+                <td>Description</td>
+                <td><input id="description" name="description" ></td>
+                <td><input type="submit" value="pay"></td>
+            </tr>
+
+        </table>
+    </form>
+</div>
+
+</body>
+</html>
