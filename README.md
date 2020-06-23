@@ -16,8 +16,8 @@ How to Run :
 
 - Open the view.py in project and set your [PayPing token](https://app.payping.ir/token)
 
-- Run the project using PyCharm or manually with command : 
-  -```python manage.py runserver```
+- Run the project using PyCharm or manually with command :
+    - ```python manage.py runserver```
 
 - open browser with URL = http://localhost:8000
 
