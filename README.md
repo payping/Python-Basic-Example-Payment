@@ -18,6 +18,7 @@ How to Run :
 
 - Run the project using PyCharm or manually with command :
     - ```python manage.py runserver```
+    - for mac  ```python3 manage.py runserver```
 
 - open browser with URL = http://localhost:8000
 
